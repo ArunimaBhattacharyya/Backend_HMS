@@ -32,10 +32,7 @@ public class Undergoes {
     @JoinColumn(name = "AssistingNurse")
     private Nurse assistingNurse;
 
-    // ✅ Default Constructor
     public Undergoes() {}
-
-    // ================= GETTERS =================
 
     public UndergoesId getId() {
         return id;
@@ -61,7 +58,6 @@ public class Undergoes {
         return assistingNurse;
     }
 
-    // ================= SETTERS =================
 
     public void setId(UndergoesId id) {
         this.id = id;
