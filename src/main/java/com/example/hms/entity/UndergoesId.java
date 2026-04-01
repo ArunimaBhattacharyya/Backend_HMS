@@ -22,18 +22,14 @@ public class UndergoesId implements Serializable {
     @Column(name = "DateUndergoes")
     private LocalDateTime dateUndergoes;
 
-    // Default Constructor
     public UndergoesId() {}
 
-    // Parameterized Constructor
     public UndergoesId(int patient, int procedures, int stay, LocalDateTime dateUndergoes) {
         this.patient = patient;
         this.procedures = procedures;
         this.stay = stay;
         this.dateUndergoes = dateUndergoes;
     }
-
-    // ================= GETTERS =================
 
     public int getPatient() {
         return patient;
@@ -51,8 +47,6 @@ public class UndergoesId implements Serializable {
         return dateUndergoes;
     }
 
-    // ================= SETTERS =================
-
     public void setPatient(int patient) {
         this.patient = patient;
     }
@@ -68,8 +62,6 @@ public class UndergoesId implements Serializable {
     public void setDateUndergoes(LocalDateTime dateUndergoes) {
         this.dateUndergoes = dateUndergoes;
     }
-
-    // ================= equals & hashCode =================
 
     @Override
     public boolean equals(Object o) {

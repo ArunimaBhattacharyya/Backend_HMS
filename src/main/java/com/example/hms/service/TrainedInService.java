@@ -21,8 +21,6 @@ public class TrainedInService {
     @Autowired
     private ProcedureRepository procedureRepo;
 
-    // __define-ocg__ mapping inside service
-
     private TrainedInDTO convertToDTO(TrainedIn entity) {
         TrainedInDTO dto = new TrainedInDTO();
 

@@ -83,7 +83,7 @@ public class UndergoesService {
         repository.deleteById(id);
     }
 
-    // ================== CONVERSIONS ==================
+    // CONVERSIONS
 
     private UndergoesDTO convertToDTO(Undergoes u) {
         UndergoesDTO dto = new UndergoesDTO();
